@@ -81,11 +81,12 @@
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-6">Contact & Réservation</h2>
       <p class="mb-6">Tu veux une ambiance unique pour ton événement ? Contacte-moi ci-dessous :</p>
-      <form class="grid gap-4 max-w-md mx-auto">
-        <input type="text" placeholder="Nom" class="p-3 border border-gray-300 rounded-md">
-        <input type="email" placeholder="Email" class="p-3 border border-gray-300 rounded-md">
-        <textarea placeholder="Message / Type d’événement" class="p-3 border border-gray-300 rounded-md"></textarea>
-        <button class="bg-pink-600 text-white font-bold py-3 rounded-md hover:bg-pink-700 transition">Envoyer</button>
+      <form action="https://formsubmit.co/sp3ctr3one@gmail.com" method="POST" class="grid gap-4 max-w-md mx-auto">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Nom" required class="p-3 border border-gray-300 rounded-md">
+      <input type="email" name="email" placeholder="Email" required class="p-3 border border-gray-300 rounded-md">
+      <textarea name="message" placeholder="Message / Type d’événement" required class="p-3 border border-gray-300 rounded-md"></textarea>
+      <button type="submit" class="bg-pink-600 text-white font-bold py-3 rounded-md hover:bg-pink-700 transition">Envoyer</button>
       </form>
     </div>
   </section>
