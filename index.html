@@ -14,17 +14,28 @@
 </head>
 <body class="bg-gradient-to-tr from-gray-900 via-purple-900 to-black text-white">
   <!-- Hero -->
-  <video autoplay muted loop playsinline class="absolute bottom-4 left-4 w-40 md:w-64 rounded-lg shadow-lg">
-    <source src="https://djsp3ctr3.github.io/dj-sp3ctr3-site/VID_20240707_112036.mp4" type="video/mp4">
-    Ton navigateur ne supporte pas la vidéo HTML5.
-  </video>
-  <video autoplay muted loop playsinline class="absolute bottom-4 right-4 w-40 md:w-64 rounded-lg shadow-lg">
-    <source src="https://djsp3ctr3.github.io/dj-sp3ctr3-site/VID_20240525_234247.mp4" type="video/mp4">
-    Ton navigateur ne supporte pas la vidéo HTML5.
-  </video>
-  <img src="https://djsp3ctr3.github.io/dj-sp3ctr3-site/IMG_20250502_154531.jpg" 
-     alt="DJ Sp3ctr3" 
-     class="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-32 md:w-48 opacity-90 pointer-events-none select-none" />
+  <!-- Vidéo bas gauche (mobile: empilée, desktop: en bas à gauche) -->
+<video autoplay muted loop playsinline 
+  class="w-40 md:w-64 rounded-lg shadow-lg 
+         fixed bottom-2 left-1/2 transform -translate-x-1/2 
+         md:absolute md:bottom-4 md:left-4 md:translate-x-0 z-0">
+  <source src="https://djsp3ctr3.github.io/dj-sp3ctr3-site/VID_20240707_112036.mp4" type="video/mp4">
+  Ton navigateur ne supporte pas la vidéo HTML5.
+</video>
+
+<!-- Vidéo bas droite (mobile: empilée, desktop: en bas à droite) -->
+<video autoplay muted loop playsinline 
+  class="w-40 md:w-64 rounded-lg shadow-lg 
+         fixed bottom-44 left-1/2 transform -translate-x-1/2 
+         md:absolute md:bottom-4 md:right-4 md:left-auto md:translate-x-0 z-0">
+  <source src="https://djsp3ctr3.github.io/dj-sp3ctr3-site/VID_20240525_234247.mp4" type="video/mp4">
+  Ton navigateur ne supporte pas la vidéo HTML5.
+</video>
+
+<!-- Image centrée bas (mobile: plus grande, desktop: taille normale) -->
+<img src="https://djsp3ctr3.github.io/dj-sp3ctr3-site/IMG_20250502_154531.jpg" 
+  alt="DJ Sp3ctr3" 
+  class="fixed bottom-2 left-1/2 transform -translate-x-1/2 w-40 md:absolute md:bottom-4 md:w-32 md:opacity-90 pointer-events-none select-none z-10" />
   <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
     <!-- Image droite -->
     <img src="https://raw.githubusercontent.com/DjSp3ctr3/dj-sp3ctr3-site/refs/heads/images/L1000986-2.webp" alt="DJ Sp3ctr3" class="absolute top-4 left-1/2 -translate-x-1/2 w-32 md:w-48 opacity-80 pointer-events-none select-none" />
